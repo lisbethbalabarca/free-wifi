@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container ">
-  <h2>Stacked form</h2>
+  <h2>Title</h2>
   <form action="/action_page.php">
     <div class="form-group ">
       <label for="name">Name:</label>
@@ -22,8 +22,8 @@
 		</div>
     </div>
     <div class="form-group">
-    	<label for="phone">Phone:</label>
-    	<input id="phone" type="tel">  	
+    	<label for="phone">Phone:</label><br/>
+    	<input id="phone" type="tel" class="form-control">  	
     </div>
     <div class="form-group">
       <label for="email">Email:</label>
@@ -231,7 +231,12 @@
 	</div>
 	<div class="form-group">
       <label for="days">How long have you been in Peru?</label>
-      <input type="text" class="form-control" id="days" name="days">
+      <select class="form-control" id="exampleFormControlSelect1">
+      	<option value="1-3">1-3 Days</option>
+      	<option value="3-5">3-5 Days</option>
+      	<option value="6-8">6-8 Days</option>
+      	<option value="10+">10+</option>
+      </select>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
