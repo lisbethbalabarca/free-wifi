@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="container ">
   <h2>Stacked form</h2>
   <form action="/action_page.php">
-    <div class="form-group">
+    <div class="form-group ">
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
     </div>
@@ -27,12 +27,12 @@
     </div>
     <div class="form-group">
       <label for="email">Email:</label>
-      <input type="email" class="form-control" id="name" placeholder="Enter E-mail" name="email">
+      <input type="email" class="form-control" id="email" placeholder="Enter E-mail" name="email">
     </div>
     <div class="form-group">
-    <label for="exampleFormControlSelect1">Country</label>
+    <label for="exampleFormControlSelect1">Country: </label>
 	    <select class="form-control" id="exampleFormControlSelect1">
-	      	<option value="" selected="selected"></option>
+	      	<option value="" selected="selected">Choose the country</option>
 			<option value="Afghanistan">Afghanistan</option>
 			<option value="Albania">Albania</option>
 			<option value="Algeria">Algeria</option>
@@ -227,8 +227,12 @@
 			<option value="Yemen">Yemen</option>
 			<option value="Zambia">Zambia</option>
 			<option value="Zimbabwe">Zimbabwe</option>
-			    </select>
-	  </div>
+		</select>
+	</div>
+	<div class="form-group">
+      <label for="days">How long have you been in Peru?</label>
+      <input type="text" class="form-control" id="days" name="days">
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
