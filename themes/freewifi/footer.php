@@ -25,5 +25,21 @@
       	utilsScript: "wp-content/themes/freewifi/build/utils.js"
     	});
   	</script>
+    <script>
+      var $form = $('form#test-form'),
+      url = 'https://script.google.com/macros/s/AKfycbwOHkCv4N_XtQXXQ2fKs9UDO41zevOfe3NW-6QAUYpWQGj-Pu0/exec'
+
+      $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+          url: url,
+          method: "GET",
+          dataType: "json",
+          data: $form.serializeObject()
+        }).success(
+          // do something
+        );
+      })
+    </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<div class="container ">
+<!-- <div class="container">
   <h2>Title</h2>
-  <form action="/action_page.php">
+  <form action="" id="test-form" method="GET">
     <div class="form-group ">
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
@@ -238,7 +238,34 @@
       	<option value="10+">10+</option>
       </select>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button id="submit-form" type="submit" class="btn btn-primary">Submit</button>
   </form>
-</div>
+</div> -->
+<form id="test-form">
+  
+  <div>
+    <label>Field 1</label>
+    <input type="text" name="form_field_1" placeholder="Field 1"/>
+  </div>
+
+  <div>
+    <label>Field 2</label>
+    <input type="text" name="form_field_2" placeholder="Field 2"/>
+  </div>
+  
+  <div>
+    <label>Field 3</label>
+    <input type="text" name="form_field_3" placeholder="Field 3"/>
+  </div>
+  
+  <div>
+    <label>Field 4</label>
+    <input type="text" name="form_field_4" placeholder="Field 4"/>
+  </div>
+
+  <div>
+    <button type="submit"id="submit-form">Submit</button>
+  </div>
+
+</form>
 <?php get_footer(); ?>
